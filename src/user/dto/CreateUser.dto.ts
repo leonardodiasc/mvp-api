@@ -1,8 +1,9 @@
 import { IsString } from "class-validator";
-import { IsEmail, IsNotEmpty, IsStrongPassword } from "class-validator/types/decorator/decorators";
+import { IsEmail, IsNotEmpty, IsStrongPassword, MinLength } from "class-validator/types/decorator/decorators";
 
 export class CreateUserDTO{
     @IsString()
+    @MinLength(8)
     @IsNotEmpty()
     name: string;
     @IsEmail()
