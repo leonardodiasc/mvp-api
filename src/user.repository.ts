@@ -5,5 +5,9 @@ export class UserRepository {
         this.users.push(user);
         console.log(user);
     }
+    
+    async list(){
+        return this.users;
+    }
 
 }
