@@ -1,6 +1,6 @@
 export class UserEntity{
     id: string
-    nome: string;
+    name: string;
     email: string;
-    senha: string;
+    pswd: string;
 }
